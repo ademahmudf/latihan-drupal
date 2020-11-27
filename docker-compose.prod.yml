@@ -13,6 +13,8 @@ services:
     deploy:
       restart_policy:
         condition: on-failure
+    healthcheck:
+      test: curl -f http://localhost/ || exit 0
  
   postgres:
     environment:
