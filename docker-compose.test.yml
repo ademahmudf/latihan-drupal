@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   drupal:
-    image: cilsy/custom-drupal
+    image: ademahmudf/custom-drupal
     build: .
     ports:
       - "80:80"
